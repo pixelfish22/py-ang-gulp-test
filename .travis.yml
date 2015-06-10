@@ -1,5 +1,6 @@
-language: python
-
+language: node_js
+node_js:
+- "0.10"
 python:
 - '2.7'
 
@@ -11,7 +12,7 @@ before_install:
   - sudo apt-cache search libcouchbase
   - npm install -g npm
   - npm install -g bower
-  - bower install
+
 
 
 install:
@@ -19,9 +20,9 @@ install:
 - pip install boto
 - pip install pylint
 - pip install Jinja2
-- npm install
+
 
 
 script:
-- gulp default
+- bash build-js.sh
 
