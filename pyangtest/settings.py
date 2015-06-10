@@ -25,7 +25,7 @@ SECRET_KEY = 'k9t$ltgj#1mdaqt8!_u1_7-c7j=ou$lh7n01f_=x@98acr!_f_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'creatures',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -82,12 +83,15 @@ DATABASES = {
 }
 
 
+
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Chicago'
 
 USE_I18N = True
 
