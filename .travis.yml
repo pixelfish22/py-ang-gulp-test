@@ -5,9 +5,7 @@ python:
 - '2.7'
 rvm:
 - 2.0.0
-before_install:
-  - npm install -g npm
-  - npm install -g bower
+
 
 
 
@@ -19,7 +17,8 @@ before_script:
   - npm install -g bower
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - bower install -f
-  - ls pyangtest/static
+  - npm install
+  - ls -a
 
 
 script:
