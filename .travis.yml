@@ -14,8 +14,13 @@ before_install:
 install:
 - gem install sass
 
+before_script:
+  - npm install -g npm
+  - npm install -g bower
+  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - bower install -f
 
 
 script:
-- bash build-js.sh
+- gulp lint
 
