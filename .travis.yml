@@ -18,8 +18,7 @@ before_script:
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - bower install -f
   - npm install
-  - bower install angular
-  - bower install angular-mocks
+  - bower install 
   - ls -a
 
 
