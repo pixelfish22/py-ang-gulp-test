@@ -9,6 +9,8 @@ before_install:
   - echo deb http://packages.couchbase.com/snapshot/ubuntu oneiric oneiric/main | sudo tee /etc/apt/sources.list.d/couchbase.list
   - sudo apt-get update
   - sudo apt-cache search libcouchbase
+  - npm install -g npm
+
 install:
 - sudo apt-get -y install libcouchbase-dev libcouchbase2-core libcouchbase2-libevent libevent-dev
 - pip install boto
