@@ -11,7 +11,6 @@ before_install:
   - sudo apt-cache search libcouchbase
 install:
 - sudo apt-get -y install libcouchbase-dev libcouchbase2-core libcouchbase2-libevent libevent-dev
-- pip install -r requirements.pip
 - pip install boto
 - pip install pylint
 - pip install Jinja2
