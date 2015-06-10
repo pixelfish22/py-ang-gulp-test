@@ -8,6 +8,9 @@ describe('test tests', function(){
     }));
 
     it('should be 2', function(){
-        expect(2+2).toBe(4);
+        expect(1+1).toBe(2);
+    });
+    it('should be 4', function(){
+        expect(2*2).toBe(4)
     })
 });
