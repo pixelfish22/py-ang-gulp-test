@@ -11,6 +11,7 @@ before_install:
   - sudo apt-cache search libcouchbase
   - npm install -g npm
   - npm install -g bower
+  - bower install
 
 
 install:
@@ -19,7 +20,6 @@ install:
 - pip install pylint
 - pip install Jinja2
 - npm install
-- bower install
 
 
 script:
